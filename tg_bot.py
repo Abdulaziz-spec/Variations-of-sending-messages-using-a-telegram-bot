@@ -49,7 +49,6 @@ def answer_text(message: Message):
         user_video = message.video.file_id
         bot.send_video(chat_id, user_video, caption='это ти)')
 
-    # ['text', 'audio','document','photo', 'sticker','video','video_note','voice','location','contact','venue','venue','animation']
     elif message.content_type == 'video_note':
         user_video_note = message.video_note.file_id
         bot.send_video_note(chat_id, user_video_note)
@@ -76,8 +75,6 @@ def answer_text(message: Message):
         user_animation = message.animation.file_id
         bot.send_animation(chat_id, user_animation)
 
-
-# Запуск бота
 
 bot.polling(logger_level=logging.INFO)
 bot.polling(none_stop=True)
