@@ -4,7 +4,7 @@ import logging
 from telebot import TeleBot
 from telebot.types import Message
 
-TOKEN = '7596663809:AAE2gncKENJH7zf3LahlZoo2T2epPmU1Pyg'
+TOKEN = 'YOUR_TOKEN'
 
 bot = TeleBot(TOKEN)
 
